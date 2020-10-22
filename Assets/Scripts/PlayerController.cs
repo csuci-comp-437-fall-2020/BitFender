@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
         _body = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Vector2 moveDirection = Vector2.zero;
 
