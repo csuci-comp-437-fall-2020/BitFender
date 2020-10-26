@@ -51,6 +51,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(Input.GetKey(KeyCode.W))
+        {
+            direction = 0;
+            Debug.Log("Up");
+        }
+        else if(Input.GetKey(KeyCode.D))
+        {
+            direction = 3;
+            Debug.Log("Right");
+        }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            direction = 1;
+            Debug.Log("Down");
+        }
+        else if(Input.GetKey(KeyCode.A))
+        {
+            direction = 2;
+            Debug.Log("Left");
+        }
+
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Shoot();
