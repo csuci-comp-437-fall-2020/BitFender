@@ -280,7 +280,7 @@ MonoBehaviour:
   speed: 500
   bulletSpeed: 700
   bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
-  maxHealth: 1
+  maxHealth: 5
   currentHealth: 0
 --- !u!58 &220604150
 CircleCollider2D:
