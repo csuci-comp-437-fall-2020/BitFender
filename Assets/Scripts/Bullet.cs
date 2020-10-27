@@ -10,8 +10,14 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if (hit.gameObject.tag == "Player")
+        else if (hit.gameObject.tag == "Player" && gameObject.tag == "Enemy")
         {
+            hit.gameObject.GetComponent<PlayerController>().currentHealth--;
+            Destroy(gameObject);
+        }
+        else if(hit.gameObject.tag == "Enemy" && gameObject.tag == "Player")
+        {
+            hit.gameObject.GetComponent<EnemyBehavior>().currentHealth--;
             Destroy(gameObject);
         }
     }

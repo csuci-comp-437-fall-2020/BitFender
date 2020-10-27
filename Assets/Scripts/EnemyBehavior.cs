@@ -18,16 +18,23 @@ public class EnemyBehavior : MonoBehaviour
     public float attackSpeed = 1f;
     private float attackCounter;
 
+    [Header ("Health")]
+    public int maxHealth;
+    public int currentHealth;
+
     // Start is called before the first frame update
     void Start()
     {
         attackCounter = attackSpeed;
+
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
         Attack();
+        Death();
     }
 
     private void Attack()
@@ -41,6 +48,7 @@ public class EnemyBehavior : MonoBehaviour
                     if(hit != null)
                     {
                         Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
+                        bulletClone.gameObject.tag = "Enemy";
                         Vector2 direction = new Vector2(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y);
                         bulletClone.velocity = direction * bulletSpeed * Time.deltaTime;
 
@@ -53,6 +61,14 @@ public class EnemyBehavior : MonoBehaviour
                 }
                 
                 break;
+        }
+    }
+
+    private void Death()
+    {
+        if(currentHealth <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 

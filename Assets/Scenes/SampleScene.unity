@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 189269063}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,6 +162,8 @@ MonoBehaviour:
   bulletSpeed: 300
   detectRange: 5
   attackSpeed: 1
+  maxHealth: 1
+  currentHealth: 0
 --- !u!58 &189269064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -278,6 +280,8 @@ MonoBehaviour:
   speed: 500
   bulletSpeed: 700
   bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
+  maxHealth: 1
+  currentHealth: 0
 --- !u!58 &220604150
 CircleCollider2D:
   m_ObjectHideFlags: 0

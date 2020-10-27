@@ -15,11 +15,16 @@ public class PlayerController : MonoBehaviour
     public float bulletSpeed = 700f;
     public Rigidbody2D bullet;
 
+    [Header ("Health")]
+    public int maxHealth;
+    public int currentHealth;
+
     void Start()
     {
         Application.targetFrameRate = 60;
 
         _body = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
     }
 
     void FixedUpdate()
@@ -76,11 +81,14 @@ public class PlayerController : MonoBehaviour
         {
             Shoot();
         }
+
+        Death();
     }
 
     private void Shoot()
     {
         Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
+        bulletClone.gameObject.tag = "Player";
         switch(direction)
         {
             case 0:
@@ -97,5 +105,13 @@ public class PlayerController : MonoBehaviour
                 break;
         }
         
+    }
+
+    private void Death()
+    {
+        if(currentHealth <= 0)
+        {
+            Debug.Log("Dead");
+        }
     }
 }
