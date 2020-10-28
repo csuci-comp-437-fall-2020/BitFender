@@ -5,12 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
- 
 
-public void StartGame()
+    public GameObject restartDialog;
+    public Animator dialog;
+    
+
+
+
+    public void StartGame()
 {
     SceneManager.LoadScene("SampleScene");
 }
+
+    public void OpenSettings()
+    {
+        
+           dialog.SetBool("isHidden", false);
+    }
+    public void CloseSettings()
+    {
+
+        dialog.SetBool("isHidden", true);
+    }
+
 
 
 }
