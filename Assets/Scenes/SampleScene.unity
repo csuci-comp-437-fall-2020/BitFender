@@ -434,7 +434,7 @@ MonoBehaviour:
   bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
   maxHealth: 5
   currentHealth: 0
-  restartDialog: {fileID: 1570909842}
+  restartDialog: {fileID: 0}
 --- !u!58 &220604150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3263,7 +3263,7 @@ GameObject:
   - component: {fileID: 1805031793}
   m_Layer: 0
   m_Name: Collision
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
