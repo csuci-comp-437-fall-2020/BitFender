@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,12 +22,23 @@ public class PlayerController : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    // NB Added Following Codes Delete or edit if wrong
+    [Header("Restart")]
+    public GameObject restartDialog;
+  
+
+
     void Start()
     {
         Application.targetFrameRate = 60;
 
         _body = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
+
+        //NB Added Following Codes Delete or edit if wrong
+        restartDialog.SetActive(false);
+
+
     }
 
     void FixedUpdate()
@@ -113,5 +127,22 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Dead");
         }
+
+        //NB Added Following Codes Delete or edit if wrong
+        restartDialog.SetActive(true);
+
     }
+
+    //NB Added Following Codes Delete or edit if wrong
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void ExitToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 }
