@@ -12,7 +12,7 @@ public class Bullet : MonoBehaviour
         }
         else if (hit.gameObject.tag == "Player" && gameObject.tag == "Enemy")
         {
-            hit.gameObject.GetComponent<PlayerController>().currentHealth--;
+            hit.gameObject.GetComponent<PlayerController>().GetDamaged();
             Destroy(gameObject);
         }
         else if(hit.gameObject.tag == "Enemy" && gameObject.tag == "Player")
