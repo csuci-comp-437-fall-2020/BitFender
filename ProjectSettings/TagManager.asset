@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Gound
+    uniqueID: 3873799945
+    locked: 0
+  - name: Collison
+    uniqueID: 2851026895
+    locked: 0
   - name: Player
     uniqueID: 3134895895
     locked: 0
