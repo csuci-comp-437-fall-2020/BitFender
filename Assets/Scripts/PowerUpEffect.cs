@@ -4,27 +4,31 @@ using UnityEngine;
 
 public class PowerUpEffect : MonoBehaviour
 {
-    public enum TYPE {DAMAGE_BOOST, MAX_HEALTH_UP, SHIELD, MOVEMENT_UP}
+    public PowerUp powerUp;
 
-    public TYPE type;
+    void Start()
+    {
+        GetComponent<SpriteRenderer>().sprite = powerUp.sprite;
+    }
+    
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D hit)
     {
         if(hit.gameObject.tag == "Player")
         {
             PlayerController player = hit.gameObject.GetComponent<PlayerController>();
-            switch(type)
+            switch(powerUp.type)
             {
-                case TYPE.DAMAGE_BOOST:
+                case PowerUp.TYPE.DAMAGE_BOOST:
                     player.damage++;
                     break;
-                case TYPE.MAX_HEALTH_UP:
+                case PowerUp.TYPE.MAX_HEALTH_UP:
                     player.IncreaseMaxHealth();
                     break;
-                case TYPE.SHIELD:
+                case PowerUp.TYPE.SHIELD:
                     //TODO: will do later since I have to coad a following shield and all that cool jazz
                     break;
-                case TYPE.MOVEMENT_UP:
+                case PowerUp.TYPE.MOVEMENT_UP:
                     player.speed += 10f;
                     break;
 
