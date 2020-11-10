@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [Header ("Shooting")]
     public float bulletSpeed = 700f;
     public Rigidbody2D bullet;
+    public int damage = 1;
     public int numOfBulletChained = 3;
     private int numOfBulletShot;
     public float maxShootCooldown = 2f; //this is max time between bullet shots
@@ -152,10 +153,38 @@ public class PlayerController : MonoBehaviour
         Death();
     }
 
-    public void GetDamaged()
+    public void GetDamaged(int damage)
     {
-        currentHealth--;
-        healthMeter[currentHealth].sprite = emptyHeart;
+        currentHealth -= damage;
+        SetHealthUI();
+    }
+
+    public void IncreaseMaxHealth()
+    {
+        maxHealth++;
+        for (int i = 0; i < healthMeter.Length; i++)
+        {
+            if(i < maxHealth)
+            {
+                healthMeter[i].enabled = true;
+            }
+            else
+            {
+                healthMeter[i].enabled = false;
+            }
+        }
+        SetHealthUI();
+    }
+
+    private void SetHealthUI()
+    {
+        if(currentHealth < maxHealth)
+        {
+            for(int i = healthMeter.Length - 1; i >= currentHealth; i--)
+            {
+                healthMeter[i].sprite = emptyHeart;
+            }
+        }
     }
 
     private void Shoot()
@@ -166,6 +195,7 @@ public class PlayerController : MonoBehaviour
             {
                 Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
                 bulletClone.gameObject.tag = "Player";
+                bulletClone.GetComponent<Bullet>().damage = damage;
                 switch(direction)
                 {
                     case 0:

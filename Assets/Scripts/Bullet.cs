@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int damage;
+
     void OnTriggerEnter2D(Collider2D hit)
     {
         if(hit.gameObject.tag == "Wall")
@@ -12,12 +14,12 @@ public class Bullet : MonoBehaviour
         }
         else if (hit.gameObject.tag == "Player" && gameObject.tag == "Enemy")
         {
-            hit.gameObject.GetComponent<PlayerController>().GetDamaged();
+            hit.gameObject.GetComponent<PlayerController>().GetDamaged(damage);
             Destroy(gameObject);
         }
         else if(hit.gameObject.tag == "Enemy" && gameObject.tag == "Player")
         {
-            hit.gameObject.GetComponent<EnemyBehavior>().currentHealth--;
+            hit.gameObject.GetComponent<EnemyBehavior>().GetDamaged(damage);
             Destroy(gameObject);
         }
     }

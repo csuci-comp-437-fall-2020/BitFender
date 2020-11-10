@@ -17,6 +17,7 @@ public class EnemyBehavior : MonoBehaviour
     public float detectRange = 5f;
     public float attackSpeed = 1f;
     private float attackCounter;
+    public int damage;
 
     [Header ("Health")]
     public int maxHealth;
@@ -28,6 +29,10 @@ public class EnemyBehavior : MonoBehaviour
         attackCounter = attackSpeed;
 
         currentHealth = maxHealth;
+        if(enemyType == ENEMY_TYPE.STATIONARY)
+        {
+            damage = 1;
+        }
     }
 
     // Update is called once per frame
@@ -35,6 +40,11 @@ public class EnemyBehavior : MonoBehaviour
     {
         Attack();
         Death();
+    }
+
+    public void GetDamaged(int damage)
+    {
+        currentHealth -= damage;
     }
 
     private void Attack()
@@ -49,6 +59,7 @@ public class EnemyBehavior : MonoBehaviour
                     {
                         Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
                         bulletClone.gameObject.tag = "Enemy";
+                        bulletClone.GetComponent<Bullet>().damage = damage;
                         Vector2 direction = new Vector2(hit.transform.position.x - transform.position.x, hit.transform.position.y - transform.position.y);
                         bulletClone.velocity = direction * bulletSpeed * Time.deltaTime;
 
