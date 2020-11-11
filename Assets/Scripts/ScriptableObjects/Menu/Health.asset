@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b75efd461769f245944c918e4becc2f, type: 3}
+  m_Name: Health
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  fullHeart: {fileID: 21300000, guid: 06b1d1093c3c1b44cb44107ec07b7f9e, type: 3}
+  halfHeart: {fileID: 21300000, guid: 0fb3dd5b0a40bf34383a15ca85f88291, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 39c94c7f0b6723647b36d3716492e292, type: 3}

@@ -16,20 +16,20 @@ public class PowerUpEffect : MonoBehaviour
     {
         if(hit.gameObject.tag == "Player")
         {
-            PlayerController player = hit.gameObject.GetComponent<PlayerController>();
+            GameObject player = hit.gameObject;
             switch(powerUp.type)
             {
                 case PowerUp.TYPE.DAMAGE_BOOST:
-                    player.damage++;
+                    player.GetComponent<PlayerController>().damage++;
                     break;
                 case PowerUp.TYPE.MAX_HEALTH_UP:
-                    player.IncreaseMaxHealth();
+                    player.GetComponent<Player>().IncreaseMaxHealth();
                     break;
                 case PowerUp.TYPE.SHIELD:
                     //TODO: will do later since I have to coad a following shield and all that cool jazz
                     break;
                 case PowerUp.TYPE.MOVEMENT_UP:
-                    player.speed += 10f;
+                    player.GetComponent<PlayerController>().speed += 10f;
                     break;
 
             }
