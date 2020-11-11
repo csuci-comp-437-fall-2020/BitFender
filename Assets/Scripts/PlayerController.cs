@@ -1,9 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 
 public class PlayerController : MonoBehaviour
 {
@@ -27,52 +24,15 @@ public class PlayerController : MonoBehaviour
     //This is such that the player will not have to shoot all bullets to reset the timer.
     private float currentBufferPeriod;
 
-    [Header ("Health")]
-    public int maxHealth;
-    public int currentHealth;
-    public Image[] healthMeter;
-    [SerializeField]
-    private Sprite fullHeart;
-    [SerializeField]
-    private Sprite halfHeart;
-    [SerializeField]
-    private Sprite emptyHeart;
-    
-
-    // NB Added Following Codes Delete or edit if wrong
-    [Header("Restart")]
-    public GameObject restartDialog;
-  
-
-
     void Start()
     {
-        Application.targetFrameRate = 60;
-
         _body = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
-
+        
         _animator = GetComponent<Animator>();
         _animator.SetFloat("moveX", 0);
         _animator.SetFloat("moveY", -1);
 
-        for (int i = 0; i < healthMeter.Length; i++)
-        {
-            if(i < maxHealth)
-            {
-                healthMeter[i].enabled = true;
-            }
-            else
-            {
-                healthMeter[i].enabled = false;
-            }
-        }
-
         numOfBulletShot = 0;
-
-        //NB Added Following Codes Delete or edit if wrong
-        restartDialog.SetActive(false);
-        Time.timeScale = 1f;
     }
 
     void FixedUpdate()
@@ -149,42 +109,7 @@ public class PlayerController : MonoBehaviour
             _animator.SetFloat("moveY", moveDirection.y);
         }
 
-        Shoot();
-        Death();
-    }
-
-    public void GetDamaged(int damage)
-    {
-        currentHealth -= damage;
-        SetHealthUI();
-    }
-
-    public void IncreaseMaxHealth()
-    {
-        maxHealth++;
-        for (int i = 0; i < healthMeter.Length; i++)
-        {
-            if(i < maxHealth)
-            {
-                healthMeter[i].enabled = true;
-            }
-            else
-            {
-                healthMeter[i].enabled = false;
-            }
-        }
-        SetHealthUI();
-    }
-
-    private void SetHealthUI()
-    {
-        if(currentHealth < maxHealth)
-        {
-            for(int i = healthMeter.Length - 1; i >= currentHealth; i--)
-            {
-                healthMeter[i].sprite = emptyHeart;
-            }
-        }
+        Shoot();        
     }
 
     private void Shoot()
@@ -236,28 +161,6 @@ public class PlayerController : MonoBehaviour
         {
             currentBufferPeriod -= Time.deltaTime;
         }
-    }
-
-    private void Death()
-    {
-        if(currentHealth <= 0)
-        {
-            //NB Added Following Codes Delete or edit if wrong
-            restartDialog.SetActive(true);
-            Time.timeScale = 0f;
-        }
-    }
-
-    //NB Added Following Codes Delete or edit if wrong
-
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void ExitToMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
     }
 
 }

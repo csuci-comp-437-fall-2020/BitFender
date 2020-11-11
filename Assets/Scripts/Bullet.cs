@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
         }
         else if (hit.gameObject.tag == "Player" && gameObject.tag == "Enemy")
         {
-            hit.gameObject.GetComponent<PlayerController>().GetDamaged(damage);
+            hit.gameObject.GetComponent<Player>().GetDamaged(damage);
             Destroy(gameObject);
         }
         else if(hit.gameObject.tag == "Enemy" && gameObject.tag == "Player")
