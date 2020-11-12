@@ -36,7 +36,7 @@ public class ConsummableItem : MonoBehaviour
             switch(item.type)
             {
                 case Consummables.TYPE.BITCOIN:
-                    player.bitCoin++;
+                    player.inventory.bitCoin++;
                     break;
                 case Consummables.TYPE.HEALTH:
                     player.Heal();
