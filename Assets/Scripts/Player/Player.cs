@@ -14,6 +14,10 @@ public class Player : Character
     [Header("Restart")]
     public GameObject restartDialog;
 
+    [Header("Collectables")]
+    [HideInInspector]
+    public int bitCoin = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +46,11 @@ public class Player : Character
     {
         maxHealth++;
         healthUI.GetComponent<HealthUI>().AddHeartIcon();
+    }
+
+    public void Heal()
+    {
+        healthUI.GetComponent<HealthUI>().Heal();
     }
 
     private void Death()

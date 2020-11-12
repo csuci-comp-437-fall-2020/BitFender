@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff79614b9ba50c1409821085137c3bbd, type: 3}
-  m_Name: StationaryEnemy
+  m_Script: {fileID: 11500000, guid: 19ee8b457a7f97446b4f8723bdc884ff, type: 3}
+  m_Name: Health
   m_EditorClassIdentifier: 
-  enemyType: 0
-  sprite: {fileID: 0}
-  bulletSpeed: 100
-  detectRange: 5
-  attackSpeed: 1
-  damage: 1
-  maxHealth: 2
+  type: 1
+  sprite: {fileID: 1022599487994879481, guid: 0af3b2dd41c5c4548bb44d63c43297c7, type: 3}
+  animator: {fileID: 9100000, guid: 8300d5e289f8bb746ab2ddf96d712b2a, type: 2}

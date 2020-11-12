@@ -60,6 +60,16 @@ public class HealthUI : MonoBehaviour
         SetHealthUI();
     }
 
+    public void Heal()
+    {
+        health.currentHealth++;
+        if(health.currentHealth > curMaxHearts)
+        {
+            health.currentHealth = curMaxHearts;
+        }
+        heartIcons[health.currentHealth - 1].GetComponent<Image>().sprite = health.fullHeart;
+    }
+
     private void SetHealthUI()
     {
         if(health.currentHealth < curMaxHearts)
