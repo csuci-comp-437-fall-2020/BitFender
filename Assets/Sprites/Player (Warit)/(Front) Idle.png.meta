@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 09e8562a8c9c044d3a5c984975803bd8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1755037731080199581
+    second: (Front) Idle_0
+  - first:
+      213: -855709335730366599
+    second: (Front) Idle_1
+  - first:
+      213: 349852155831882446
+    second: (Front) Idle_2
+  - first:
+      213: 583398342436737586
+    second: (Front) Idle_3
+  - first:
+      213: 5181885601962896862
+    second: (Front) Idle_4
+  - first:
+      213: -3287196181959131633
+    second: (Front) Idle_0
+  - first:
+      213: 5559366667783789485
+    second: (Front) Idle_1
+  - first:
+      213: 4759502266950976735
+    second: (Front) Idle_2
+  - first:
+      213: -3756167145527644362
+    second: (Front) Idle_3
+  - first:
+      213: -7480344769518524903
+    second: (Front) Idle_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +103,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: (Front) Idle_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e3e432d788162d0800000000000000
+      internalID: -3287196181959131633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Front) Idle_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab56619786d62d40800000000000000
+      internalID: 5559366667783789485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Front) Idle_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4874948162d0240800000000000000
+      internalID: 4759502266950976735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Front) Idle_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fe4d5d1e96fdbc0800000000000000
+      internalID: -3756167145527644362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: (Front) Idle_4
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 2
+        width: 40
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916a56f801a703890800000000000000
+      internalID: -7480344769518524903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
