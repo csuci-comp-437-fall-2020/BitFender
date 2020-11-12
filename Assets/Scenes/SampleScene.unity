@@ -3926,6 +3926,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7550150543610551380, guid: 3ae667972e651154dabfb130d5a738aa, type: 3}
+      propertyPath: bitCoin
+      value: 
+      objectReference: {fileID: 8475793255685689907, guid: ecbd9d02a15629444a5b20fe4ba3e155, type: 3}
+    - target: {fileID: 7550150543610551380, guid: 3ae667972e651154dabfb130d5a738aa, type: 3}
+      propertyPath: healthDrop
+      value: 
+      objectReference: {fileID: 5197735445861686350, guid: afe5dc47b23797847bac1661ebb7be48, type: 3}
     - target: {fileID: 7550150543610551381, guid: 3ae667972e651154dabfb130d5a738aa, type: 3}
       propertyPath: m_Name
       value: StationaryEnemy

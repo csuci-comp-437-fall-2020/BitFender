@@ -9,6 +9,10 @@ public class EnemyBehavior : MonoBehaviour
     public LayerMask whatIsPlayer;
     public Rigidbody2D bullet;
 
+    [Header("Droppables")]
+    public GameObject bitCoin;
+    public GameObject healthDrop;
+
     private float attackCounter;
 
     [HideInInspector]
@@ -67,7 +71,33 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(currentHealth <= 0)
         {
+            DropItem();
             Destroy(gameObject);
+        }
+    }
+
+    private void DropItem()
+    {
+        Vector3 itemSpawnPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        float chanceToDrop = Random.Range(0f, 1f);
+        if(chanceToDrop >= 0.5f)
+        {
+            int whichItem = Random.Range(0, 2);
+            switch(whichItem)
+            {
+                case 0:
+                    //Drop bitCoins
+                    int numOfCoins = Random.Range(1, 9);
+                    for (int i = 0; i < numOfCoins; i++)
+                    {
+                        Instantiate(bitCoin, itemSpawnPoint, transform.rotation);
+                    }
+                    break;
+                case 1:
+                    //Drop Health
+                    Instantiate(healthDrop, itemSpawnPoint, transform.rotation);
+                    break;
+            }
         }
     }
 
