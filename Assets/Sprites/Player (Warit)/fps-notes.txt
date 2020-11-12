@@ -1,0 +1,2 @@
+Idle: 2 fps.
+Move-Shoot: 10 fps.

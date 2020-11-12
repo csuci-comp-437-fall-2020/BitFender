@@ -1,0 +1,4 @@
+Enemy (1) move direction animation is the same as attacking animation when approaching (or detect) the player. It is a close combat enemy. When it sees the player, it will move towards by jumping and skipping steps. When the enemy reaches, it will attempt to stomp the player with its entire body and crashing it.
+
+Idle: 5 fps.
+Move=Attack: 7 fps.
