@@ -15,8 +15,7 @@ public class Player : Character
     public GameObject restartDialog;
 
     [Header("Collectables")]
-    [HideInInspector]
-    public int bitCoin = 0;
+    public PlayerInventory inventory;
 
     // Start is called before the first frame update
     void Start()

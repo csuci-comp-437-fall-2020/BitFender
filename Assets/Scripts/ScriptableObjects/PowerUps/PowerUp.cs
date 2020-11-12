@@ -8,7 +8,7 @@ public class PowerUp : ScriptableObject
 {
     public string powerUpName;
     public Sprite sprite;
-    public int quantity;
+    public int price;
     public bool stackable;
 
     public enum TYPE 
