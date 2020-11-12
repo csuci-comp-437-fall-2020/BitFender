@@ -6,6 +6,22 @@ public class Bullet : MonoBehaviour
 {
     public int damage;
 
+    private Vector2 startPosition;
+    public const float distance = 5f;
+
+    void Start()
+    {
+        startPosition = transform.position;
+    }
+
+    void Update()
+    {
+        if(Vector2.Distance(startPosition, transform.position) >= distance)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D hit)
     {
         if(hit.gameObject.tag == "Wall")
@@ -23,4 +39,5 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 }
