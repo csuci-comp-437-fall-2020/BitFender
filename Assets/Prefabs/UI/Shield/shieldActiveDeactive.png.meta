@@ -1,0 +1,601 @@
+fileFormatVersion: 2
+guid: 9400e4fa4aa5149948d25c5c12775496
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1762119058525990072
+    second: shieldActiveDeactive_0
+  - first:
+      213: 7662083431125210271
+    second: shieldActiveDeactive_1
+  - first:
+      213: -269065914791823246
+    second: shieldActiveDeactive_2
+  - first:
+      213: -7826111923167282298
+    second: shieldActiveDeactive_3
+  - first:
+      213: -4143370862047983334
+    second: shieldActiveDeactive_4
+  - first:
+      213: -728096739253083114
+    second: shieldActiveDeactive_5
+  - first:
+      213: 65557770702081493
+    second: shieldActiveDeactive_6
+  - first:
+      213: -3963819641727652903
+    second: shieldActiveDeactive_7
+  - first:
+      213: -3115521742559790119
+    second: shieldActiveDeactive_8
+  - first:
+      213: -6898589223918289999
+    second: shieldActiveDeactive_9
+  - first:
+      213: 2265509716133309749
+    second: shieldActiveDeactive_0
+  - first:
+      213: -7083156006660565170
+    second: shieldActiveDeactive_1
+  - first:
+      213: 387141377268889006
+    second: shieldActiveDeactive_2
+  - first:
+      213: 8891188956443111624
+    second: shieldActiveDeactive_3
+  - first:
+      213: 6840771763416148532
+    second: shieldActiveDeactive_4
+  - first:
+      213: -5188163556368539590
+    second: shieldActiveDeactive_5
+  - first:
+      213: 6181990120634855739
+    second: shieldActiveDeactive_6
+  - first:
+      213: -3936709333973274862
+    second: shieldActiveDeactive_7
+  - first:
+      213: 2678062454775816892
+    second: shieldActiveDeactive_8
+  - first:
+      213: 3598321400142366265
+    second: shieldActiveDeactive_9
+  - first:
+      213: 440176583123388098
+    second: shieldActiveDeactive_10
+  - first:
+      213: 4362351244731040468
+    second: shieldActiveDeactive_11
+  - first:
+      213: 6701149368043426186
+    second: shieldActiveDeactive_12
+  - first:
+      213: 1567944646584222163
+    second: shieldActiveDeactive_13
+  - first:
+      213: -4280297934215555449
+    second: shieldActiveDeactive_14
+  - first:
+      213: -8039023019651385949
+    second: shieldActiveDeactive_15
+  - first:
+      213: 790322759018180079
+    second: shieldActiveDeactive_16
+  - first:
+      213: 4860876565627897076
+    second: shieldActiveDeactive_17
+  - first:
+      213: -2076822539875371026
+    second: shieldActiveDeactive_18
+  - first:
+      213: 509550059063705643
+    second: shieldActiveDeactive_19
+  - first:
+      213: 6307050442533441914
+    second: shieldActiveDeactive_20
+  - first:
+      213: 5657439035785255452
+    second: shieldActiveDeactive_21
+  - first:
+      213: -6022542297220900133
+    second: shieldActiveDeactive_22
+  - first:
+      213: -2083776147713465128
+    second: shieldActiveDeactive_23
+  - first:
+      213: 2147520027081433816
+    second: shieldActiveDeactive_24
+  - first:
+      213: 2685618479889145504
+    second: shieldActiveDeactive_25
+  - first:
+      213: -2833223137038948260
+    second: shieldActiveDeactive_26
+  - first:
+      213: -964182719302521290
+    second: shieldActiveDeactive_27
+  - first:
+      213: -2120528069730404851
+    second: shieldActiveDeactive_28
+  - first:
+      213: -3965341763949312508
+    second: shieldActiveDeactive_29
+  - first:
+      213: -5325873317066364620
+    second: shieldActiveDeactive_30
+  - first:
+      213: -2258481460586262342
+    second: shieldActiveDeactive_31
+  - first:
+      213: -3658052212729982006
+    second: shieldActiveDeactive_32
+  - first:
+      213: -3505448549115505203
+    second: shieldActiveDeactive_33
+  - first:
+      213: 8408141309121987496
+    second: shieldActiveDeactive_34
+  - first:
+      213: -1914887121990892177
+    second: shieldActiveDeactive_35
+  - first:
+      213: 8960472302294025512
+    second: shieldActiveDeactive_36
+  - first:
+      213: -311266195536882614
+    second: shieldActiveDeactive_37
+  - first:
+      213: -9009779629073208249
+    second: shieldActiveDeactive_38
+  - first:
+      213: -2445235738313466798
+    second: shieldActiveDeactive_39
+  - first:
+      213: 1366327914272554196
+    second: shieldActiveDeactive_40
+  - first:
+      213: 9037433926427115881
+    second: shieldActiveDeactive_41
+  - first:
+      213: -6101790411098946093
+    second: shieldActiveDeactive_42
+  - first:
+      213: -1768860641268504126
+    second: shieldActiveDeactive_43
+  - first:
+      213: 7083099119621643110
+    second: shieldActiveDeactive_44
+  - first:
+      213: -9103590464251267940
+    second: shieldActiveDeactive_45
+  - first:
+      213: -4802628423113901309
+    second: shieldActiveDeactive_46
+  - first:
+      213: -8043542697761066354
+    second: shieldActiveDeactive_47
+  - first:
+      213: -5873402893375846524
+    second: shieldActiveDeactive_48
+  - first:
+      213: 6050812006907497265
+    second: shieldActiveDeactive_49
+  - first:
+      213: 8398800554182079023
+    second: shieldActiveDeactive_50
+  - first:
+      213: 4310367986752423211
+    second: shieldActiveDeactive_51
+  - first:
+      213: -7120805741445560332
+    second: shieldActiveDeactive_52
+  - first:
+      213: -7939709065535077019
+    second: shieldActiveDeactive_53
+  - first:
+      213: 6639408366765092369
+    second: shieldActiveDeactive_54
+  - first:
+      213: 508046374673673111
+    second: shieldActiveDeactive_55
+  - first:
+      213: -8634360601785756031
+    second: shieldActiveDeactive_56
+  - first:
+      213: -4375074558932700053
+    second: shieldActiveDeactive_57
+  - first:
+      213: -4072963037663252409
+    second: shieldActiveDeactive_58
+  - first:
+      213: -3276150549335434451
+    second: shieldActiveDeactive_59
+  - first:
+      213: -8034144924204801399
+    second: shieldActiveDeactive_60
+  - first:
+      213: -45521451380390168
+    second: shieldActiveDeactive_61
+  - first:
+      213: -8741206548171789475
+    second: shieldActiveDeactive_62
+  - first:
+      213: 6310775289091645606
+    second: shieldActiveDeactive_63
+  - first:
+      213: 7964413381474562682
+    second: shieldActiveDeactive_64
+  - first:
+      213: 8326075872306868280
+    second: shieldActiveDeactive_65
+  - first:
+      213: -7593646654217345525
+    second: shieldActiveDeactive_66
+  - first:
+      213: -4910145789538099696
+    second: shieldActiveDeactive_67
+  - first:
+      213: -5879609826137438806
+    second: shieldActiveDeactive_68
+  - first:
+      213: -1283877300888242366
+    second: shieldActiveDeactive_69
+  - first:
+      213: -8502793373324034079
+    second: shieldActiveDeactive_70
+  - first:
+      213: -4642978484971620130
+    second: shieldActiveDeactive_71
+  - first:
+      213: 4908794144380115305
+    second: shieldActiveDeactive_72
+  - first:
+      213: 2496543117969773976
+    second: shieldActiveDeactive_73
+  - first:
+      213: 8408076600421999499
+    second: shieldActiveDeactive_74
+  - first:
+      213: 897076014626953516
+    second: shieldActiveDeactive_75
+  - first:
+      213: 1156187687909036109
+    second: shieldActiveDeactive_76
+  - first:
+      213: 7084307100817524359
+    second: shieldActiveDeactive_77
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shieldActiveDeactive_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d62596515b07f10800000000000000
+      internalID: 2265509716133309749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47925ed32393bd90800000000000000
+      internalID: -7083156006660565170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5b7fd08076f5500800000000000000
+      internalID: 387141377268889006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0faa39f39d36b70800000000000000
+      internalID: 8891188956443111624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a21f3ccad4fee50800000000000000
+      internalID: 6840771763416148532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30a60acbb0fff7b0800000000000000
+      internalID: -5188163556368539590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b313a69d247dac550800000000000000
+      internalID: 6181990120634855739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fee84e7bffd59c0800000000000000
+      internalID: -3936709333973274862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb229371d936a2520800000000000000
+      internalID: 2678062454775816892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9360c2baf3ecfe130800000000000000
+      internalID: 3598321400142366265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shieldActiveDeactive_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 27
+        width: 120
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6c38b2542db1600800000000000000
+      internalID: 440176583123388098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
