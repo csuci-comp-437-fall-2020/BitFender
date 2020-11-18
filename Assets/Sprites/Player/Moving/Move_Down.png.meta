@@ -1,37 +1,22 @@
 fileFormatVersion: 2
-guid: d343da1229dbd4f82a63a987adec31db
+guid: 4d737d043a7f04ba29e60212f761e6e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7344915270158086835
-    second: (Back) Idle_0
+      213: -974533883695266629
+    second: (Front) Move-Shoot_0
   - first:
-      213: -2246538519363757813
-    second: (Back) Idle_1
+      213: 7375413877836783963
+    second: (Front) Move-Shoot_1
   - first:
-      213: 6576186937880620477
-    second: (Back) Idle_2
+      213: -3056687360861283770
+    second: (Front) Move-Shoot_2
   - first:
-      213: 1799310803033852461
-    second: (Back) Idle_3
+      213: -8288634914723416509
+    second: (Front) Move-Shoot_3
   - first:
-      213: 5119186013962817324
-    second: (Back) Idle_4
-  - first:
-      213: -7040346251471863487
-    second: (Back) Idle_0
-  - first:
-      213: 4614778959739394361
-    second: (Back) Idle_1
-  - first:
-      213: -4038645753852839207
-    second: (Back) Idle_2
-  - first:
-      213: -6417735514702204056
-    second: (Back) Idle_3
-  - first:
-      213: 3626594684562375406
-    second: (Back) Idle_4
+      213: 5929075778876598585
+    second: (Front) Move-Shoot_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -62,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -76,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +93,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -119,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: (Back) Idle_0
+      name: (Front) Move-Shoot_0
       rect:
         serializedVersion: 2
         x: 9
@@ -133,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1414449b26aab4e90800000000000000
-      internalID: -7040346251471863487
+      spriteID: bb403c89892c972f0800000000000000
+      internalID: -974533883695266629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Back) Idle_1
+      name: (Front) Move-Shoot_1
       rect:
         serializedVersion: 2
         x: 69
@@ -154,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9399634830dfa0040800000000000000
-      internalID: 4614778959739394361
+      spriteID: b51a2f368dbba5660800000000000000
+      internalID: 7375413877836783963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Back) Idle_2
+      name: (Front) Move-Shoot_2
       rect:
         serializedVersion: 2
         x: 129
@@ -175,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da36f3a519d3f7c0800000000000000
-      internalID: -4038645753852839207
+      spriteID: 64adf625a077495d0800000000000000
+      internalID: -3056687360861283770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Back) Idle_3
+      name: (Front) Move-Shoot_3
       rect:
         serializedVersion: 2
         x: 189
@@ -196,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86334cf4d8f9fe6a0800000000000000
-      internalID: -6417735514702204056
+      spriteID: 346b20bc57ad8fc80800000000000000
+      internalID: -8288634914723416509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Back) Idle_4
+      name: (Front) Move-Shoot_4
       rect:
         serializedVersion: 2
         x: 249
@@ -217,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee209ada6a0445230800000000000000
-      internalID: 3626594684562375406
+      spriteID: 939ef4ed10f484250800000000000000
+      internalID: 5929075778876598585
       vertices: []
       indices: 
       edges: []

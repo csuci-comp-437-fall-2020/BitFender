@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 057add635173b4b20b9b7cb36057e386
+guid: 651a1b32e44f04c05b89c8a9d01e85b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2669025335459359812
-    second: (Side) Idle_0
+      213: -8841706175381602422
+    second: (SIde) Stand-Shoot_0
   - first:
-      213: 6176302724296490616
-    second: (Side) Idle_1
+      213: 5881887221674126192
+    second: (SIde) Stand-Shoot_1
   - first:
-      213: 7325350322953120611
-    second: (Side) Idle_2
+      213: -9087709650768081521
+    second: (SIde) Stand-Shoot_2
   - first:
-      213: 5323465430424365025
-    second: (Side) Idle_3
+      213: 4835908339299027844
+    second: (SIde) Stand-Shoot_3
   - first:
-      213: 8773795944818352466
-    second: (Side) Idle_4
+      213: 5161100758744293732
+    second: (SIde) Stand-Shoot_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +93,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,12 +128,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: (Side) Idle_0
+      name: (SIde) Stand-Shoot_0
       rect:
         serializedVersion: 2
         x: 9
         y: 2
-        width: 40
+        width: 42
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb35d673997b5fad0800000000000000
-      internalID: -2669025335459359812
+      spriteID: a8f70003413fb4580800000000000000
+      internalID: -8841706175381602422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Side) Idle_1
+      name: (SIde) Stand-Shoot_1
       rect:
         serializedVersion: 2
         x: 69
@@ -139,19 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87e38f2ba92a6b550800000000000000
-      internalID: 6176302724296490616
+      spriteID: 07babc8b349a0a150800000000000000
+      internalID: 5881887221674126192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Side) Idle_2
+      name: (SIde) Stand-Shoot_2
       rect:
         serializedVersion: 2
         x: 129
         y: 2
-        width: 40
+        width: 42
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36be9eeae4fd8a560800000000000000
-      internalID: 7325350322953120611
+      spriteID: f8d441ca838f1e180800000000000000
+      internalID: -9087709650768081521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Side) Idle_3
+      name: (SIde) Stand-Shoot_3
       rect:
         serializedVersion: 2
         x: 189
@@ -181,19 +205,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e72482aa9fb0e940800000000000000
-      internalID: 5323465430424365025
+      spriteID: 48b844a43099c1340800000000000000
+      internalID: 4835908339299027844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Side) Idle_4
+      name: (SIde) Stand-Shoot_4
       rect:
         serializedVersion: 2
         x: 249
         y: 2
-        width: 40
+        width: 42
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25129ae1de8c2c970800000000000000
-      internalID: 8773795944818352466
+      spriteID: 461e3fe9bc9ef9740800000000000000
+      internalID: 5161100758744293732
       vertices: []
       indices: 
       edges: []
