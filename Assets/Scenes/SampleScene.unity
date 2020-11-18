@@ -4410,6 +4410,10 @@ PrefabInstance:
       propertyPath: restartDialog
       value: 
       objectReference: {fileID: 1570909842}
+    - target: {fileID: 3989757111142958986, guid: c3627f7942fc88841a8ad80e9a2b9cc6, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3627f7942fc88841a8ad80e9a2b9cc6, type: 3}
 --- !u!1001 &7550150543799818259

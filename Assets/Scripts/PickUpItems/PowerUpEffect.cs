@@ -20,7 +20,7 @@ public class PowerUpEffect : MonoBehaviour
             switch(powerUp.type)
             {
                 case PowerUp.TYPE.DAMAGE_BOOST:
-                    player.GetComponent<PlayerController>().damage++;
+                    player.GetComponent<Shooting>().damage++;
                     break;
                 case PowerUp.TYPE.MAX_HEALTH_UP:
                     player.GetComponent<Player>().IncreaseMaxHealth();
