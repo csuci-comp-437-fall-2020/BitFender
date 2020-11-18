@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 2fef69441acae4deb8163b28871c43e5
+guid: 4d737d043a7f04ba29e60212f761e6e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7242972448351051259
-    second: (Front) Stand-Shoot_0
+      213: -974533883695266629
+    second: (Front) Move-Shoot_0
   - first:
-      213: 5702582381845698596
-    second: (Front) Stand-Shoot_1
+      213: 7375413877836783963
+    second: (Front) Move-Shoot_1
   - first:
-      213: 7754477600017996194
-    second: (Front) Stand-Shoot_2
+      213: -3056687360861283770
+    second: (Front) Move-Shoot_2
   - first:
-      213: -3177984705211487480
-    second: (Front) Stand-Shoot_3
+      213: -8288634914723416509
+    second: (Front) Move-Shoot_3
   - first:
-      213: -8185491950531870234
-    second: (Front) Stand-Shoot_4
+      213: 5929075778876598585
+    second: (Front) Move-Shoot_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +93,31 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +128,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: (Front) Stand-Shoot_0
+      name: (Front) Move-Shoot_0
       rect:
         serializedVersion: 2
         x: 9
@@ -118,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfdd7ed1115348460800000000000000
-      internalID: 7242972448351051259
+      spriteID: bb403c89892c972f0800000000000000
+      internalID: -974533883695266629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Front) Stand-Shoot_1
+      name: (Front) Move-Shoot_1
       rect:
         serializedVersion: 2
         x: 69
@@ -139,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42850547674a32f40800000000000000
-      internalID: 5702582381845698596
+      spriteID: b51a2f368dbba5660800000000000000
+      internalID: 7375413877836783963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Front) Stand-Shoot_2
+      name: (Front) Move-Shoot_2
       rect:
         serializedVersion: 2
         x: 129
@@ -160,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a9dbcfca407d9b60800000000000000
-      internalID: 7754477600017996194
+      spriteID: 64adf625a077495d0800000000000000
+      internalID: -3056687360861283770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Front) Stand-Shoot_3
+      name: (Front) Move-Shoot_3
       rect:
         serializedVersion: 2
         x: 189
@@ -181,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80bae309fb785e3d0800000000000000
-      internalID: -3177984705211487480
+      spriteID: 346b20bc57ad8fc80800000000000000
+      internalID: -8288634914723416509
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: (Front) Stand-Shoot_4
+      name: (Front) Move-Shoot_4
       rect:
         serializedVersion: 2
         x: 249
@@ -202,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e18ab8807a476e80800000000000000
-      internalID: -8185491950531870234
+      spriteID: 939ef4ed10f484250800000000000000
+      internalID: 5929075778876598585
       vertices: []
       indices: 
       edges: []
