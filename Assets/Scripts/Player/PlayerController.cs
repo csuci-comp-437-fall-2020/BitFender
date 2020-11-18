@@ -33,6 +33,7 @@ public class PlayerController : MonoBehaviour
         _animator.SetFloat("moveY", -1);
 
         numOfBulletShot = 0;
+        direction = 1; //facing player at start is default direction
     }
 
     void FixedUpdate()
