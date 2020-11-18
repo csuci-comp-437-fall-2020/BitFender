@@ -9,6 +9,7 @@ public class Player : Character
     [Header ("Health")]
     public HealthUI healthUIPrefab;
     private HealthUI healthUI;
+    private Collider2D hitbox;
     
     // NB Added Following Codes Delete or edit if wrong
     [Header("Restart")]
@@ -24,6 +25,8 @@ public class Player : Character
 
         health.currentHealth = maxHealth;
         healthUI = Instantiate(healthUIPrefab);
+
+        hitbox = transform.GetChild(0).GetComponent<Collider2D>();
 
         //NB Added Following Codes Delete or edit if wrong
         restartDialog.SetActive(false);

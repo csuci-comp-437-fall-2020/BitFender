@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wall
   - Enemy
+  - PlayerHitBox
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
+  - PlayerHitBox
+  - Wall
   - 
   - 
   - 
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bullet
+    uniqueID: 3976234171
     locked: 0
   - name: Player
     uniqueID: 3134895895
