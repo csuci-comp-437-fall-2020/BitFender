@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1160071401
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -117,4 +117,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
+  bitCoin: {fileID: 8475793255685689907, guid: ecbd9d02a15629444a5b20fe4ba3e155, type: 3}
+  healthDrop: {fileID: 5197735445861686350, guid: afe5dc47b23797847bac1661ebb7be48, type: 3}
   currentHealth: 0

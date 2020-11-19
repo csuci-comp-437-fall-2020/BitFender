@@ -122,7 +122,7 @@ public class PlayerController : MonoBehaviour
             if(numOfBulletShot < numOfBulletChained)
             {
                 _animator.SetBool("shooting", true);
-                shoot.SpreadShoot(direction);
+                shoot.BurstShoot(direction);
 
                 numOfBulletShot++;
                 currentBufferPeriod = maxBufferPeriod;

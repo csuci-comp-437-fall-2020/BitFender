@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [HideInInspector]
     public int damage;
 
     private Vector2 startPosition;
