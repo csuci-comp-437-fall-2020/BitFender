@@ -8,6 +8,7 @@ public class RoomManager : MonoBehaviour
     [Header("PowerUps")]
     public PowerUpList powerUpList;
     private Transform powerUpSpawnPoint;
+    private bool dropped = false;
 
     [Header("Enemies")]
     public GameObject[] creatableEnemies;
@@ -55,7 +56,10 @@ public class RoomManager : MonoBehaviour
             {
                 door.OpenDoor();
             }
-            DropPowerUp();
+            if(!dropped)
+            {
+                DropPowerUp();
+            }
         }
     }
 
@@ -70,6 +74,8 @@ public class RoomManager : MonoBehaviour
     private void DropPowerUp()
     {
         int random = Random.Range(0, powerUpList.powerUps.Length - 1);
+
+        dropped = true;
 
         Instantiate(powerUpList.powerUps[random], powerUpSpawnPoint);
     }
