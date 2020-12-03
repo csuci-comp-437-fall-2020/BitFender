@@ -18,6 +18,9 @@ public class Player : Character
     [Header("Collectables")]
     public PlayerInventory inventory;
 
+    //[HideInInspector]
+    public GameObject currentRoom;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,8 @@ public class Player : Character
         healthUI = Instantiate(healthUIPrefab);
 
         hitbox = transform.GetChild(0).GetComponent<Collider2D>();
+
+        currentRoom.GetComponent<RoomManager>().playerInRoom = true;
 
         //NB Added Following Codes Delete or edit if wrong
         restartDialog.SetActive(false);
