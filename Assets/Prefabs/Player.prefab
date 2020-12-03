@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 3688530612804737640}
   - component: {fileID: 3688530612804737646}
   - component: {fileID: 322835974}
+  - component: {fileID: 3989757111142958986}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -179,9 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 300
-  bulletSpeed: 700
-  bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
-  damage: 1
+  _body: {fileID: 0}
+  _animator: {fileID: 0}
   numOfBulletChained: 3
   maxShootCooldown: 2
   maxBufferPeriod: 2
@@ -249,3 +249,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &3989757111142958986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688530612804737638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c5c3277cbdc0443973f2f12956e626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
+  damage: 1
+  bulletSpeed: 500
