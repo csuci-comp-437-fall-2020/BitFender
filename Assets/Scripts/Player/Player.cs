@@ -9,6 +9,7 @@ public class Player : Character
     [Header ("Health")]
     public HealthUI healthUIPrefab;
     private HealthUI healthUI;
+    private Collider2D hitbox;
     
     // NB Added Following Codes Delete or edit if wrong
     [Header("Restart")]
@@ -17,6 +18,12 @@ public class Player : Character
     [Header("Collectables")]
     public PlayerInventory inventory;
 
+    [HideInInspector]
+    public bool hasShield;
+
+    //[HideInInspector]
+    public GameObject currentRoom;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +31,11 @@ public class Player : Character
 
         health.currentHealth = maxHealth;
         healthUI = Instantiate(healthUIPrefab);
+
+        hitbox = transform.GetChild(0).GetComponent<Collider2D>();
+
+        currentRoom.GetComponent<RoomManager>().playerInRoom = true;
+        hasShield = false;
 
         //NB Added Following Codes Delete or edit if wrong
         restartDialog.SetActive(false);
@@ -38,7 +50,14 @@ public class Player : Character
 
     public void GetDamaged(int damage)
     {
-        health.currentHealth -= damage;
+        if(hasShield)
+        {
+            hasShield = false;
+        }
+        else
+        {
+            health.currentHealth -= damage;
+        }
     }
 
     public void IncreaseMaxHealth()

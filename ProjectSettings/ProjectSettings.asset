@@ -631,10 +631,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 1110377d-ded9-4cda-9841-ed1cfad22804
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: BitFender
+  organizationId: minster
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

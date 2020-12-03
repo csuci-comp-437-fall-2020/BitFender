@@ -6,16 +6,16 @@ public class PlayerController : MonoBehaviour
 {
     [Header ("Movement")] 
     public float speed = 500f;
-    private Rigidbody2D _body;
+    [HideInInspector]
+    public Rigidbody2D _body;
     private int direction;
     //0 = up, 1 = down, 2 = left, 3 = right
-    private Animator _animator;
+    [HideInInspector]
+    public Animator _animator;
 
 
     [Header ("Shooting")]
-    public float bulletSpeed = 700f;
-    public Rigidbody2D bullet;
-    public int damage = 1;
+    private Shooting shoot;
     public int numOfBulletChained = 3;
     private int numOfBulletShot;
     public float maxShootCooldown = 2f; //this is max time between bullet shots
@@ -32,7 +32,9 @@ public class PlayerController : MonoBehaviour
         _animator.SetFloat("moveX", 0);
         _animator.SetFloat("moveY", -1);
 
+        shoot = GetComponent<Shooting>();
         numOfBulletShot = 0;
+        direction = 1; //facing player at start is default direction
     }
 
     void FixedUpdate()
@@ -73,6 +75,7 @@ public class PlayerController : MonoBehaviour
         if(_body.velocity != Vector2.zero)
         {
             _animator.SetBool("moving", true);
+            _animator.SetInteger("direction", -1);
         }
     }
 
@@ -96,7 +99,7 @@ public class PlayerController : MonoBehaviour
         }
         else if(Input.GetKey(KeyCode.S))
         {
-             moveDirection = -Vector2.up;
+            moveDirection = -Vector2.up;
             direction = 1;
             _animator.SetFloat("moveX", moveDirection.x);
             _animator.SetFloat("moveY", moveDirection.y);
@@ -118,24 +121,9 @@ public class PlayerController : MonoBehaviour
         {
             if(numOfBulletShot < numOfBulletChained)
             {
-                Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
-                bulletClone.gameObject.tag = "Player";
-                bulletClone.GetComponent<Bullet>().damage = damage;
-                switch(direction)
-                {
-                    case 0:
-                        bulletClone.velocity = Vector2.up * bulletSpeed * Time.deltaTime;
-                        break;
-                    case 1:
-                        bulletClone.velocity = -Vector2.up * bulletSpeed * Time.deltaTime;
-                        break;
-                    case 2:
-                        bulletClone.velocity = Vector2.left * bulletSpeed * Time.deltaTime;
-                        break;
-                    case 3:
-                        bulletClone.velocity = -Vector2.left * bulletSpeed * Time.deltaTime;
-                        break;
-                }
+                _animator.SetBool("shooting", true);
+                shoot.BurstShoot(direction);
+
                 numOfBulletShot++;
                 currentBufferPeriod = maxBufferPeriod;
             }
@@ -145,6 +133,7 @@ public class PlayerController : MonoBehaviour
                 currentShootCooldown = maxShootCooldown;
                 currentBufferPeriod = maxBufferPeriod;
                 numOfBulletShot = 0;
+                _animator.SetBool("shooting", false);
             }
         }
         else
@@ -156,11 +145,11 @@ public class PlayerController : MonoBehaviour
         {
             currentBufferPeriod = maxBufferPeriod;
             numOfBulletShot = 0;
+            _animator.SetBool("shooting", false);
         }
         else
         {
             currentBufferPeriod -= Time.deltaTime;
         }
     }
-
 }
