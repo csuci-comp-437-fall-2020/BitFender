@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 3688530612804737640}
   - component: {fileID: 3688530612804737646}
   - component: {fileID: 322835974}
+  - component: {fileID: 3989757111142958986}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -132,7 +133,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1160071401
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2856d904041cadb49bc0ff86fa6b391a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -179,9 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 300
-  bulletSpeed: 700
-  bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
-  damage: 1
+  _body: {fileID: 0}
+  _animator: {fileID: 0}
   numOfBulletChained: 3
   maxShootCooldown: 2
   maxBufferPeriod: 2
@@ -223,6 +223,8 @@ MonoBehaviour:
   healthUIPrefab: {fileID: 7939083819826045191, guid: 0fdd75c35a702c546a23ff1c9d09e790, type: 3}
   restartDialog: {fileID: 0}
   inventory: {fileID: 11400000, guid: be5f2832b87d07f479c56f6498b98cf2, type: 2}
+  hasShield: 0
+  currentRoom: {fileID: 0}
 --- !u!61 &322835974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -249,3 +251,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &3989757111142958986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3688530612804737638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c5c3277cbdc0443973f2f12956e626, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
+  damage: 1
+  bulletSpeed: 500
