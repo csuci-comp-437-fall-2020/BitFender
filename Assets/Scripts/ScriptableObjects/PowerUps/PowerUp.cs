@@ -16,7 +16,9 @@ public class PowerUp : ScriptableObject
         DAMAGE_BOOST, 
         MAX_HEALTH_UP, 
         SHIELD, 
-        MOVEMENT_UP
+        MOVEMENT_UP,
+        BULLET_COUNT_UP,
+        SHOTGUN
     }
 
     public TYPE type;

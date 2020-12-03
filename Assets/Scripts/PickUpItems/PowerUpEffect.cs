@@ -20,16 +20,21 @@ public class PowerUpEffect : MonoBehaviour
             switch(powerUp.type)
             {
                 case PowerUp.TYPE.DAMAGE_BOOST:
-                    player.GetComponent<PlayerController>().damage++;
+                    player.GetComponent<Shooting>().damage++;
                     break;
                 case PowerUp.TYPE.MAX_HEALTH_UP:
                     player.GetComponent<Player>().IncreaseMaxHealth();
                     break;
                 case PowerUp.TYPE.SHIELD:
-                    //TODO: will do later since I have to coad a following shield and all that cool jazz
+                    player.GetComponent<Player>().hasShield = true;
                     break;
                 case PowerUp.TYPE.MOVEMENT_UP:
                     player.GetComponent<PlayerController>().speed += 10f;
+                    break;
+                case PowerUp.TYPE.BULLET_COUNT_UP:
+                    player.GetComponent<PlayerController>().numOfBulletChained++;
+                    break;
+                case PowerUp.TYPE.SHOTGUN:
                     break;
 
             }

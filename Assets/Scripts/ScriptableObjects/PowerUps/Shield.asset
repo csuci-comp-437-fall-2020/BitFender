@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   powerUpName: Shield
-  sprite: {fileID: 0}
-  quantity: 0
+  sprite: {fileID: 21300000, guid: 98c61f6a66d7b624c95e7b8195d93180, type: 3}
+  price: 0
   stackable: 0
   type: 2
