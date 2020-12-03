@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MaxHealthUp
   m_EditorClassIdentifier: 
   powerUpName: MaxHealthUp
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 84540288a9d9ae94ea5abef56fd61745, type: 3}
   price: 5
   stackable: 1
   type: 1
