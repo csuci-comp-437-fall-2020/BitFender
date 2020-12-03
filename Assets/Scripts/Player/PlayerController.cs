@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class PlayerController : MonoBehaviour
     private int direction;
     //0 = up, 1 = down, 2 = left, 3 = right
     private Animator _animator;
+
+    // NB Added Following Codes Delete or edit if wrong
+    AudioSource audioSrc;
 
 
     [Header ("Shooting")]
@@ -34,6 +38,9 @@ public class PlayerController : MonoBehaviour
 
         numOfBulletShot = 0;
         direction = 1; //facing player at start is default direction
+
+        //NB Added Following Codes Delete or edit if wrong
+        audioSrc = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -118,8 +125,11 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && currentShootCooldown <= 0)
         {
-            if(numOfBulletShot < numOfBulletChained)
+            if (numOfBulletShot < numOfBulletChained)
             {
+                //NB Added Following Codes Delete or edit if wrong
+                audioSrc.Play();
+
                 _animator.SetBool("shooting", true);
                 Rigidbody2D bulletClone = (Rigidbody2D)Instantiate(bullet, transform.position, transform.rotation);
                 bulletClone.gameObject.tag = "Player";

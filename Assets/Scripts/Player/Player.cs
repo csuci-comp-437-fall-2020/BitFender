@@ -10,7 +10,7 @@ public class Player : Character
     public HealthUI healthUIPrefab;
     private HealthUI healthUI;
     private Collider2D hitbox;
-    
+
     // NB Added Following Codes Delete or edit if wrong
     [Header("Restart")]
     public GameObject restartDialog;
@@ -31,6 +31,7 @@ public class Player : Character
         //NB Added Following Codes Delete or edit if wrong
         restartDialog.SetActive(false);
         Time.timeScale = 1f;
+
     }
 
     // Update is called once per frame
