@@ -18,6 +18,9 @@ public class EnemyBehavior : MonoBehaviour
     [HideInInspector]
     public int currentHealth;
 
+    [HideInInspector]
+    public RoomManager _roomManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,8 @@ public class EnemyBehavior : MonoBehaviour
 
         attackCounter = enemy.attackSpeed;
         currentHealth = enemy.maxHealth;
+
+        _roomManager = transform.parent.GetComponent<RoomManager>();
     }
 
     // Update is called once per frame
@@ -72,6 +77,7 @@ public class EnemyBehavior : MonoBehaviour
         if(currentHealth <= 0)
         {
             DropItem();
+            _roomManager.populatedEnemies.Remove(gameObject);
             Destroy(gameObject);
         }
     }

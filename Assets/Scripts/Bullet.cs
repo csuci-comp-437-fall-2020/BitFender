@@ -25,14 +25,18 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hit)
     {
-        if(hit.gameObject.tag == "Wall")
+        if(hit.gameObject.tag == "Wall" || hit.gameObject.tag == "Door")
         {
             Destroy(gameObject);
         }
         else if (hit.gameObject.tag == "Player" && gameObject.tag == "Enemy")
         {
-            hit.gameObject.GetComponent<Player>().GetDamaged(damage);
+            if(hit.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                hit.gameObject.GetComponent<Player>().GetDamaged(damage);
+            }
             Destroy(gameObject);
+            
         }
         else if(hit.gameObject.tag == "Enemy" && gameObject.tag == "Player")
         {

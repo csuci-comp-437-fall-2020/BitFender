@@ -74,8 +74,10 @@ public class HealthUI : MonoBehaviour
     {
         if(health.currentHealth < curMaxHearts)
         {
-            for(int i = heartIcons.Length - 1; i >= health.currentHealth; i--)
+            for(int i = curMaxHearts - 1; i >= health.currentHealth; i--)
             {
+                Debug.Log(i);
+                Debug.Log(heartIcons[i]);
                 heartIcons[i].GetComponent<Image>().sprite = health.emptyHeart;
             }
         }

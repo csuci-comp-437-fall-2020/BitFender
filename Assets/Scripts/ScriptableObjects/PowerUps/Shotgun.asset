@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55d20f1a61eeba04eab81cb30f3cc73a, type: 3}
-  m_Name: Shield
+  m_Name: Shotgun
   m_EditorClassIdentifier: 
-  powerUpName: Shield
-  sprite: {fileID: 21300000, guid: 98c61f6a66d7b624c95e7b8195d93180, type: 3}
-  price: 0
+  powerUpName: BulletShotgun
+  sprite: {fileID: 21300000, guid: 8a6839dcc6490f94d8364fb4b4377fe3, type: 3}
+  price: 50
   stackable: 0
-  type: 2
+  type: 5

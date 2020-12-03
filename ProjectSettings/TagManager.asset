@@ -6,9 +6,12 @@ TagManager:
   tags:
   - Wall
   - Enemy
-  - SpwanPoint
   - Rooms
   - PlayerHitBox
+  - Door
+  - Ground
+  - VirtualCamera
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -21,8 +24,8 @@ TagManager:
   - Player
   - PlayerHitBox
   - Wall
-  - 
-  - 
+  - Ground
+  - Obstacles
   - 
   - 
   - 
@@ -48,6 +51,9 @@ TagManager:
     locked: 0
   - name: Bullet
     uniqueID: 3976234171
+    locked: 0
+  - name: Door
+    uniqueID: 2581678179
     locked: 0
   - name: Player
     uniqueID: 3134895895
