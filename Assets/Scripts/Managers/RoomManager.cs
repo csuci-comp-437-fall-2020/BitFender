@@ -5,10 +5,16 @@ using Cinemachine;
 
 public class RoomManager : MonoBehaviour
 {
+    [Header("PowerUps")]
+    public PowerUpList powerUpList;
+    private Transform powerUpSpawnPoint;
+
+    [Header("Enemies")]
     public GameObject[] creatableEnemies;
     [HideInInspector]
     public List<GameObject> populatedEnemies = new List<GameObject>();
     
+    [Header("Doors")]
     private Door[] doors;
     private Collider2D _groundCollider;
     private CinemachineConfiner _camera;
@@ -25,9 +31,13 @@ public class RoomManager : MonoBehaviour
             {
                 _groundCollider = child.GetComponent<Collider2D>();
             }
-            if(child.tag == "Enemy")
+            else if(child.tag == "Enemy")
             {
                 populatedEnemies.Add(child.gameObject);
+            }
+            else if(child.tag == "SpawnPoint")
+            {
+                powerUpSpawnPoint = child.transform;
             }
         }
 
@@ -45,6 +55,7 @@ public class RoomManager : MonoBehaviour
             {
                 door.OpenDoor();
             }
+            DropPowerUp();
         }
     }
 
@@ -54,5 +65,12 @@ public class RoomManager : MonoBehaviour
         {
             _camera.m_BoundingShape2D = _groundCollider;
         }
+    }
+
+    private void DropPowerUp()
+    {
+        int random = Random.Range(0, powerUpList.powerUps.Length - 1);
+
+        Instantiate(powerUpList.powerUps[random], powerUpSpawnPoint);
     }
 }

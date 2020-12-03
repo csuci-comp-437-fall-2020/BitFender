@@ -6,12 +6,12 @@ TagManager:
   tags:
   - Wall
   - Enemy
-  - SpwanPoint
   - Rooms
   - PlayerHitBox
   - Door
   - Ground
   - VirtualCamera
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX

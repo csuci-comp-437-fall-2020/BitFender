@@ -1006,7 +1006,7 @@ Tilemap:
     m_Data: {fileID: -2141881388052670735, guid: addb8caec8e3cb24e9d936854d2867dd, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1343618802968497233, guid: addb8caec8e3cb24e9d936854d2867dd, type: 3}
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: -177101409781693527, guid: addb8caec8e3cb24e9d936854d2867dd, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: -4029368802909668376, guid: addb8caec8e3cb24e9d936854d2867dd, type: 3}
@@ -1253,6 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8861141419446623188}
   - component: {fileID: 8861141419446623195}
+  - component: {fileID: 571939802}
   m_Layer: 0
   m_Name: LV1_Room_Main
   m_TagString: Untagged
@@ -1297,6 +1298,22 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &571939802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8861141419446623194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee69c26b93078a44b95e04cd1737c7ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpList: {fileID: 11400000, guid: cde42ed4e2f347246808af6e1ff4f40e, type: 2}
+  creatableEnemies: []
+  populatedEnemies: []
+  playerInRoom: 0
 --- !u!1 &8861141419742888536
 GameObject:
   m_ObjectHideFlags: 0
