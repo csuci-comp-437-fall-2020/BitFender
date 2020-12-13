@@ -346,6 +346,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slot: {fileID: 493206572017529113, guid: 0ff5b732497459e448b5699af8341151, type: 3}
   possiblePowerUps:
+  - {fileID: 11400000, guid: eabc5df4c7a54e343944b38168eac09f, type: 2}
   - {fileID: 11400000, guid: 48acee9de71ec514eb1df28d18fd750e, type: 2}
   - {fileID: 11400000, guid: 1fc410635f31aa946a7fc4e4ef6c537f, type: 2}
   - {fileID: 11400000, guid: 113c073e7b0d51a4394ac73eb40068d3, type: 2}
+  - {fileID: 11400000, guid: 6c81042384a975c4fa5889e63f9a2ce5, type: 2}
+  - {fileID: 11400000, guid: 330696406a26dbf4d8539560032bf215, type: 2}

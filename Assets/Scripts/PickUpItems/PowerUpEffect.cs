@@ -35,6 +35,7 @@ public class PowerUpEffect : MonoBehaviour
                     player.GetComponent<PlayerController>().numOfBulletChained++;
                     break;
                 case PowerUp.TYPE.SHOTGUN:
+                    player.GetComponent<PlayerController>().shootType = 1;
                     break;
 
             }
