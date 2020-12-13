@@ -3743,7 +3743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee69c26b93078a44b95e04cd1737c7ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUpList: {fileID: 0}
+  powerUpList: {fileID: 11400000, guid: cde42ed4e2f347246808af6e1ff4f40e, type: 2}
   creatableEnemies: []
   populatedEnemies: []
   playerInRoom: 0
@@ -3754,6 +3754,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8194307610630690799}
     m_Modifications:
+    - target: {fileID: 7550150543610551380, guid: 3ae667972e651154dabfb130d5a738aa, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 6945184232528815121, guid: 2caaed7e70e3d484f8be263741743a8f, type: 3}
     - target: {fileID: 7550150543610551381, guid: 3ae667972e651154dabfb130d5a738aa, type: 3}
       propertyPath: m_Name
       value: StationaryEnemy
