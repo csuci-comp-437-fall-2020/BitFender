@@ -31,6 +31,7 @@ public class ShopMenu : MonoBehaviour
             newSlot.name = "ShopSlot_" + i;
             newSlot.GetComponent<Slot>().powerUp = possiblePowerUps[powerUpToAdd];
             newSlot.GetComponent<Slot>().price.text = "x " + possiblePowerUps[powerUpToAdd].price;
+            newSlot.transform.GetChild(1).GetComponent<Image>().sprite = possiblePowerUps[powerUpToAdd].sprite;
 
             newSlot.transform.SetParent(gameObject.transform.GetChild(0));
             merchantInventory[i] = newSlot;

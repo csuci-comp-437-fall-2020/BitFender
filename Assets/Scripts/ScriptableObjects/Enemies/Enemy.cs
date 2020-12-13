@@ -10,7 +10,7 @@ public class Enemy : ScriptableObject
     public enum ENEMY_TYPE
     {
         STATIONARY,
-        BASIC,
+        WANDERING,
         BASHER,
     }
 

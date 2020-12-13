@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class Player : Character
 {
@@ -24,7 +25,17 @@ public class Player : Character
     //[HideInInspector]
     public GameObject currentRoom;
 
+    private CinemachineVirtualCamera _camera;
+
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        _camera = GameObject.FindWithTag("VirtualCamera").GetComponent<CinemachineVirtualCamera>();
+        _camera.Follow = transform;
+        _camera.LookAt = transform;
+    }
+
     void Start()
     {
         Application.targetFrameRate = 60;
