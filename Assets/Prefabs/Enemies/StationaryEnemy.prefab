@@ -79,7 +79,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 3.5, y: 2.03125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -122,6 +122,9 @@ MonoBehaviour:
   healthDrop: {fileID: 5197735445861686350, guid: afe5dc47b23797847bac1661ebb7be48, type: 3}
   currentHealth: 0
   _roomManager: {fileID: 0}
+  pursuitSpeed: 0
+  wanderSpeed: 0
+  directionChangeInterval: 0
 --- !u!95 &2281034334854900629
 Animator:
   serializedVersion: 3
