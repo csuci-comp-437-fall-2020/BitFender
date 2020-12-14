@@ -33,6 +33,7 @@ public class EnemyBehavior : MonoBehaviour {
     private float currentAngle = 0;
     private Coroutine moveCoroutine;
     private bool shooting = false;
+    private bool exploding = false;
 
     // Start is called before the first frame update
     void Start () {
@@ -43,9 +44,9 @@ public class EnemyBehavior : MonoBehaviour {
 
         _roomManager = transform.parent.GetComponent<RoomManager> ();
 
-        animator = GetComponent<Animator> ();
+        animator = GetComponent<Animator>();
 
-        if (enemy.enemyType != Enemy.ENEMY_TYPE.STATIONARY) {
+        if (enemy.enemyType == Enemy.ENEMY_TYPE.WANDERING) {
             _rb2d = GetComponent<Rigidbody2D> ();
             currentSpeed = wanderSpeed;
         }
@@ -55,7 +56,6 @@ public class EnemyBehavior : MonoBehaviour {
     void Update () {
         Attack ();
         Death ();
-        Debug.Log (shooting);
     }
 
     public void GetDamaged (int damage) {
@@ -82,7 +82,10 @@ public class EnemyBehavior : MonoBehaviour {
 
                 break;
             case Enemy.ENEMY_TYPE.WANDERING:
-                WanderingEnemy ();
+                WanderingEnemy();
+                break;
+            case Enemy.ENEMY_TYPE.EXPLODING:
+                ExplodingEnemy();
                 break;
         }
     }
@@ -136,6 +139,34 @@ public class EnemyBehavior : MonoBehaviour {
             }
             targetTransform = null;
         }
+    }
+
+    private void ExplodingEnemy()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, enemy.detectRange, whatIsPlayer);
+        if(hit != null)
+        {
+            if(!exploding)
+            {
+                animator.SetBool("exploding", true);
+                StartCoroutine(Explode());
+            }
+        }
+    }
+
+    private IEnumerator Explode()
+    {
+        exploding = true;
+        yield return new WaitForSeconds(3.4f);
+        Collider2D explosionHitBox = transform.GetChild(0).GetComponent<Collider2D>();
+        explosionHitBox.gameObject.SetActive(true);
+        exploding = false;
+        StartCoroutine(DealDamage());
+    }
+    private IEnumerator DealDamage()
+    {
+        yield return new WaitForSeconds(0.8f);
+        Destroy(gameObject);
     }
 
     private IEnumerator WanderRoutine () {

@@ -366,7 +366,7 @@ RectTransform:
   m_Children:
   - {fileID: 1570909843}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -661,6 +661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LV1_Room_BR
       objectReference: {fileID: 0}
+    - target: {fileID: 7615381192515100345, guid: 5257e63546b16c94ab4cea67559e3d1d, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 757676142630806698, guid: 30bf49df2ffa1d440b45629246eed46d, type: 3}
     - target: {fileID: 8194307610630690799, guid: 5257e63546b16c94ab4cea67559e3d1d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0699997
@@ -2177,6 +2181,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 449530930}
     m_Modifications:
+    - target: {fileID: 1650496911883926231, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650496911883926231, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 2298274725400977226, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.93
@@ -2298,10 +2310,6 @@ PrefabInstance:
       propertyPath: currentRoom
       value: 
       objectReference: {fileID: 834483272}
-    - target: {fileID: 6779792975026048272, guid: c3627f7942fc88841a8ad80e9a2b9cc6, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3627f7942fc88841a8ad80e9a2b9cc6, type: 3}
 --- !u!4 &3688530612853374099 stripped
@@ -2346,7 +2354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5774630981410294928, guid: 7faa682ffb43918479366653fde0be2f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5774630981410294928, guid: 7faa682ffb43918479366653fde0be2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

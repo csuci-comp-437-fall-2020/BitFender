@@ -22,4 +22,7 @@ public class PowerUp : ScriptableObject
     }
 
     public TYPE type;
+    public int numOfStacks;
+
+    public bool bought = false;
 }

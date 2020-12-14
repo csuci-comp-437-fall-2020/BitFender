@@ -11,7 +11,7 @@ public class Enemy : ScriptableObject
     {
         STATIONARY,
         WANDERING,
-        BASHER,
+        EXPLODING
     }
 
     public ENEMY_TYPE enemyType;
