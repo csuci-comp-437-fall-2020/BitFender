@@ -2181,14 +2181,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 449530930}
     m_Modifications:
-    - target: {fileID: 1650496911883926231, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
-      propertyPath: m_Radius
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1650496911883926231, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 2298274725400977226, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.93
@@ -2236,14 +2228,6 @@ PrefabInstance:
     - target: {fileID: 8595894271678825466, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
       propertyPath: m_Name
       value: LV1_Room_T
-      objectReference: {fileID: 0}
-    - target: {fileID: 8877940390829025364, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8877940390829025364, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}
-      propertyPath: m_TagString
-      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbff11473e2fc9d4ebdf9b877845a473, type: 3}

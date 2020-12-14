@@ -17,6 +17,10 @@ public class Player : Character
     [HideInInspector]
     public InventoryUI skillUI;
 
+    [Header("CoinCounter")]
+    public CoinCounterUI coinCounterUIPrefab;
+    private CoinCounterUI coinCounterUI;
+
     // NB Added Following Codes Delete or edit if wrong
     [Header("Restart")]
     public GameObject restartDialog;
@@ -55,7 +59,7 @@ public class Player : Character
         health.currentHealth = maxHealth;
         healthUI = Instantiate(healthUIPrefab);
 
-        
+        coinCounterUI = Instantiate(coinCounterUIPrefab);
 
         hitbox = transform.GetChild(0).GetComponent<Collider2D>();
         _sprite = GetComponent<SpriteRenderer>();

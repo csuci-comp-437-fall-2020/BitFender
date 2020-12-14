@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bitCoin: 0
   currentPowerUps:
-  - {fileID: 11400000, guid: 1fc410635f31aa946a7fc4e4ef6c537f, type: 2}
-  - {fileID: 11400000, guid: 48acee9de71ec514eb1df28d18fd750e, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

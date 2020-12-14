@@ -166,6 +166,7 @@ public class EnemyBehavior : MonoBehaviour {
     private IEnumerator DealDamage()
     {
         yield return new WaitForSeconds(0.8f);
+        _roomManager.populatedEnemies.Remove (gameObject);
         Destroy(gameObject);
     }
 

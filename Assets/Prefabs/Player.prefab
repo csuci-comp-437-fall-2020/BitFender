@@ -328,6 +328,7 @@ MonoBehaviour:
   healthUIPrefab: {fileID: 7939083819826045191, guid: 0fdd75c35a702c546a23ff1c9d09e790, type: 3}
   skillUIPrefab: {fileID: 8284318377084822981, guid: 9209fe7184fdb0e4d8916a15a8099547, type: 3}
   skillUI: {fileID: 0}
+  coinCounterUIPrefab: {fileID: 4813192388653206382, guid: 84370b62a9c39fd4aab6928c8b19610a, type: 3}
   restartDialog: {fileID: 0}
   inventory: {fileID: 11400000, guid: be5f2832b87d07f479c56f6498b98cf2, type: 2}
   hasShield: 0

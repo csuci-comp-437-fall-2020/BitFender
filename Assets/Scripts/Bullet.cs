@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage;
 
     private Vector2 startPosition;
-    public const float distance = 5f;
+    public const float distance = 8f;
 
     void Start()
     {

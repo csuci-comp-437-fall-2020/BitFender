@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 1
   sprite: {fileID: 21300000, guid: 69e7086ba92eb4b75bca2b576dbe4c01, type: 3}
-  bulletSpeed: 100
+  bulletSpeed: 75
   detectRange: 3
-  attackSpeed: 1
+  attackSpeed: 0.5
   damage: 1
   maxHealth: 1
