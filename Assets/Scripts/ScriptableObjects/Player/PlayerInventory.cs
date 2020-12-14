@@ -7,4 +7,6 @@ using UnityEngine;
 public class PlayerInventory : ScriptableObject
 {
     public int bitCoin;
+
+    public PowerUp[] currentPowerUps = new PowerUp[6];
 }

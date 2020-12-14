@@ -50,7 +50,7 @@ public class RoomManager : MonoBehaviour
     {
         SetCameraBounds();
 
-        if(populatedEnemies.Count == 0)
+        if(populatedEnemies.Count <= 0)
         {
             foreach(Door door in doors)
             {

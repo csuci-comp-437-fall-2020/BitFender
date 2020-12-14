@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 0
   sprite: {fileID: 0}
-  bulletSpeed: 100
+  bulletSpeed: 75
   detectRange: 5
-  attackSpeed: 1
+  attackSpeed: 0.5
   damage: 1
   maxHealth: 2

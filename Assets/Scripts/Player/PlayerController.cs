@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     public float maxBufferPeriod = 2f; //this is max time between shots to refresh.
     //This is such that the player will not have to shoot all bullets to reset the timer.
     private float currentBufferPeriod;
+    [HideInInspector]
+    public int shootType = 0;
 
     void Start()
     {
@@ -132,7 +134,18 @@ public class PlayerController : MonoBehaviour
                 audioSrc.Play();
 
                 _animator.SetBool("shooting", true);
-                shoot.BurstShoot(direction);
+                switch(shootType)
+                {
+                    case 0:
+                        shoot.BasicShoot(direction);
+                        break;
+                    case 1:
+                        shoot.SpreadShoot(direction);
+                        break;
+                    case 2:
+                        shoot.BurstShoot(direction);
+                        break;
+                }
 
                 numOfBulletShot++;
                 currentBufferPeriod = maxBufferPeriod;
